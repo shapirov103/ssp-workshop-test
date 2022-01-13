@@ -23,7 +23,7 @@ ssp.CodePipelineStack.builder()
   .name("ssp-eks-workshop-pipeline")
   .owner("parkand1")
   .repository({
-      repoUrl: 'ssp-eks-patterns',
+      repoUrl: 'ssp-workshop-test',
       credentialsSecretName: 'github-token',
       targetRevision: 'main'
   })

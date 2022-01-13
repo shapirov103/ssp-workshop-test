@@ -7,7 +7,7 @@ export class TeamAwesome extends ApplicationTeam {
         super({
             name: name,
             users: [
-                new ArnPrincipal(`arn:aws:iam::902206886386:user/user1`),  
+                new ArnPrincipal(`arn:aws:iam::136876205846:user/user1`),  
             ],
         teamManifestDir: './teams/application-team/'
         });
