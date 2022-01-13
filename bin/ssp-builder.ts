@@ -6,8 +6,8 @@ import { TeamAwesome } from '../teams/application-team/index';
 const app = new App();
 
 
-const account = process.env.CDK_DEFAULT_ACCOUNT!;
-const region = process.env.CDK_DEFAULT_REGION;
+const account = '929819487611';
+const region = 'us-west-2';
 const env = { account, region };
 const blueprint = ssp.EksBlueprint.builder()
     .account(account) 
@@ -21,7 +21,7 @@ const blueprint = ssp.EksBlueprint.builder()
   // Build code pipeline and add stages
 ssp.CodePipelineStack.builder()
   .name("ssp-eks-workshop-pipeline")
-  .owner("parkand1")
+  .owner("shapirov103")
   .repository({
       repoUrl: 'ssp-workshop-test',
       credentialsSecretName: 'github-token',
